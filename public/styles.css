@@ -1113,7 +1113,7 @@ supported by Chrome, Edge, Opera and Firefox */
   height: 610px;
   border: 2px solid black;
   border-radius: 10px;
-  background-image: url(./bbulls.png);
+  background-image: url(./images/bbulls.png);
   background-repeat: no-repeat;
   background-size: cover;
   pointer-events: visible ;

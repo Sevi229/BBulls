@@ -19,7 +19,7 @@ var accountE;
 const divmain = document.createElement("div");
 const add1 = document.getElementsByClassName("tobig")[0]; // Select the first element with class "c"
 const img = document.createElement("img");
-img.src = "warnig.png";
+img.src = "images/warnig.png";
 img.width = "350";
 img.height = "350";
 img.alt = "Image with text";
@@ -350,8 +350,8 @@ add1.appendChild(divmain);
 				
 				if(x != 1){x = 1;}
 			
-				if(go == 1){t = 150; score = 0; speed = 1; End.innerHTML = ""; document.getElementById('a').style.backgroundImage="url('House_PS9.png')"; go = 0; Kill.innerHTML = "Target: ";  }
-				else{document.getElementById('a').style.backgroundImage="url('House_PS9.png')"; y1 = true;}
+				if(go == 1){t = 150; score = 0; speed = 1; End.innerHTML = ""; document.getElementById('a').style.backgroundImage="url('images/House_PS9.png')"; go = 0; Kill.innerHTML = "Target: ";  }
+				else{document.getElementById('a').style.backgroundImage="url('images/House_PS9.png')"; y1 = true;}
 				
 				
 				
@@ -906,7 +906,7 @@ add1.appendChild(divmain);
 				
 				//let myDiv = document.querySelector('div');
 				//myDiv.style.backgroundImage = "url('better.png')";
-				document.getElementById('a').style.backgroundImage="url('better.png')";
+				document.getElementById('a').style.backgroundImage="url('images/better.png')";
 				if (!(window.matchMedia("(max-width: 768px)").matches)) {
                     const imgContainer2 = document.getElementById("start0");
 				imgContainer2.style.visibility = 'visible';
@@ -966,8 +966,8 @@ add1.appendChild(divmain);
                 containerB.appendChild(bull8);
                 containerC.appendChild(bull9);
 				if(x != 1){x = 1;}
-				if(go == 1){t = 150; score = 0; speed = 1; End.innerHTML = ""; document.getElementById('a').style.backgroundImage="url('House_PS9.png')"; go = 0; Kill.innerHTML = "Target: ";  }
-				else{document.getElementById('a').style.backgroundImage="url('House_PS9.png')";}
+				if(go == 1){t = 150; score = 0; speed = 1; End.innerHTML = ""; document.getElementById('a').style.backgroundImage="url('images/House_PS9.png')"; go = 0; Kill.innerHTML = "Target: ";  }
+				else{document.getElementById('a').style.backgroundImage="url('images/House_PS9.png')";}
 				
 				//let myDivs = document.querySelector('div');
 				//myDivs.style.backgroundImage = "url('House_PS9.png')";

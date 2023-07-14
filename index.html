@@ -1,0 +1,337 @@
+<html>
+
+<head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="metamask.css" type="text/css">
+    <script src="dist/metamask-onboarding.bundle.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="styles.css" />
+	<script src="https://use.typekit.net/bkt6ydm.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link href="style.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    
+    <!-- Navbar Section -->
+    <div id="home"></div>
+    <nav class="navbar">
+      <header class="navbar__container">
+        <a href="#home" id="navbar__logo"> <img id="headerSlogan" src="images/head.gif" width="80px" height="80px" alt="Providing all the..."></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+		   <li class="navbar__item">
+            <a href="#game" class="navbar__links" id="game-page">Game</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="#road" class="navbar__links" id="road-page">Roadmap</a>
+          </li>
+         
+		 
+		   <li class="navbar__item">
+          <a href="#team" class="navbar__links" id="team-page">Team</a>
+          </li>
+          <div class="fill"></div>
+          <li class="navbar__btn">
+            <input type="button" href="#" class="block-button" value="Connect" id="connectWallet">
+
+          </li>
+          <div class="--wrap">
+          <a href="https://discord.gg/mzQ5dEkbkF" class="social__icon--link"
+          ><i class="fab fa-discord"></i
+        ></a>
+        <a href="https://twitter.com/BusinessBullNft" id="beside"class="social__icon--link"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      </div>
+        </ul>
+      </header>
+    </nav>
+
+    <!-- Hero Section -->
+   
+
+    
+    <div class="hero">
+      <div class="hero__container">
+        <h1 class="hero__heading">Meet the</h1>
+		<h1 class="hero__heading"><span>Business Bulls</span></h1>
+		<div class="mini">
+        <p class="hero__description">Business Bulls is a collection of 8000 uniquely generated Non-Fungible Tokens (NFTs) designed stored on the Ethereum blockchain. With a unique design, owner-exclusive proof on the Ethereum blockchain, fair distribution and permanent decentralized storage.</p>
+		</div>
+        <button class="main__btn" ><a href="#">Visit</a></button>
+      </div>
+    <div class="Game" id="game"></div>
+    <div class="tobig"></div>
+    <div id="abso" ><img src="new.png" alt=""  id ="start0" width="140" height="60" >
+	<div id ="a" class="container">
+            
+            
+            <img src="./crosshair.png" alt="crosshair" class="cursor">
+            <img src="./blood-spot.png" alt="blood-spot" class="bloodSpot">
+            <label alt="label-0" id="label0 " class="noselect"></label>
+            <label alt="label-0" id="label1 " class="noselects"></label>
+            <label style="color: rgb(68, 0, 128);font-weight: 500;" id="label2 " class="noselect"></label>
+           
+        
+   
+    </div>
+
+    
+    <h1 id="led">Leaderboard</h1>
+    <table id="leaderboard-table">
+        <thead>
+          
+        </thead>
+        <tbody>
+          <!-- Leaderboard entries will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+
+
+    
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+       
+          <div class="main__img--card">
+         
+            <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
+              <swiper-slide><img src="images/62.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              <swiper-slide><img src="images/1.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              <swiper-slide><img src="images/2.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              <swiper-slide><img src="images/55.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              <swiper-slide><img src="images/29.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              <swiper-slide><img src="images/63.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              <swiper-slide><img src="images/34.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              <swiper-slide><img src="images/40.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              <swiper-slide><img src="images/30.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              <swiper-slide><img src="images/32.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              <swiper-slide><img src="images/51.png" alt="" width="10" height="10" oncontextmenu="return false;"></swiper-slide>
+              
+              </swiper-container>
+            
+              <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+            
+         
+        </div>
+        
+        <div class="main__content">
+          
+          <h2>About the Business Bulls</h2>
+          <p>The Business Bulls is a collection of sophisticated and exquisitely designed NFTs stored on the Ethereum blockchain. Our priority is outstanding quality that captures intricate details of clothing and facial features. Bulls aim to conquer the blockchain and expand the community through their accessible design. To participate in the "play-to-earn" game, own a Business Bull NFT. Use your NFTs to gain access to the Treasury, where monthly payouts reward winners. Exciting developments are planned for the future, including the introduction of new levels and scenery.</p>           
+          <main>Distribution of payouts:</main>
+          <p>- 1st                &nbsp;place: 50% of the staked Treasury content<br>
+          - 2nd place: 30% of the staked Treasury content<br>
+           - 3rd   place: 20% of the staked Treasury content<br></p>
+      
+          <main>To access Play-to-Earn rewards in the web game, you are required to own and connect a Metamask wallet with at least one NFT and stake it.</main>
+          
+        </div>
+      </div>
+    </div>
+ <div class="roadfull">
+    <div id ="road"></div>
+    <h2  class ="pad">Roadmap</h2>
+	<section class="timeline">
+           <ul>
+               <!-- 12 time li -->
+               <li>
+                   <div>
+                       <time>18.10.2022</time>
+                       <div class="discovery">
+                           <h1>Website Creation</h1>
+                           <p>A website is created to provide more utility.</p>
+                       </div>
+                       
+                   </div>
+               </li>
+			   <li>
+                   <div>
+                       <time>18.10.2022</time>
+                       <div class="discovery">
+                           <h1>Game Development</h1>
+                           <p>A game is to be developed. In the future there should be a play to earn possibility.</p>
+                       </div>
+                       
+                   </div>
+               </li>
+               <li>
+                <div>
+                    <time>Soon</time>
+                    <div class="discovery">
+                        <h1>Wallet Integration</h1>
+                        <p>The wallet integration is required to implement the Play to Earn and to settle the profits. </p>
+                    </div>
+                    
+                </div>
+            </li>
+               <li>
+                <div>
+                    <time>18.10.2022</time>
+                    <div class="discovery">
+                        <h1>Community Building</h1>
+                        <p>We will build a wholesome community full of awesome people. We apply for listening.</p>
+                    </div>
+                    
+                </div>
+            </li>
+          
+            <li>
+              <div>
+                  <time>Soon</time>
+                  <div class="discovery">
+                      <h1>Listening</h1>
+                      <p>We are excited to apply for listing our project on Magic Eden, where we plan to mint a limited quantity of 8,500 NFTs and implement a whitelist for the minting process.</p>
+                  </div>
+                 
+
+              </div>
+          </li>
+			<li>
+                <div>
+                    <time>Soon</time>
+                    <div class="discovery">
+                        <h1>Minting</h1>
+                        <p>8000 Nfts can be minted. There will be a limited whitelist for the Mint.</p>
+                    </div>
+                   
+
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>Soon</time>
+                    <div class="discovery">
+                        <h1>Play to Earn</h1>
+                        <p>
+                          Introducing Play-to-Earn mechanics in the game, where the top three players will receive prizes. </p>
+                    </div>
+                    
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>Soon</time>
+                    <div class="discovery">
+                        <h1>Expansion</h1>
+                        <p>We will be looking to hire and onboard more people to join the BusinessBulls Team.</p>
+                    </div>
+                    
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>Soon</time>
+                    <div class="discovery">
+                        <h1>Exclusive Nft Ardroip</h1>
+                        <p>All NFT holders, regardless of whitelist status, are eligible for a free NFT airdrop.</p>
+                    </div>
+                    
+                </div>
+            </li>
+           
+           </ul>
+       </section>
+    </div>
+	   <div class ="pad"></div>
+        <script src="main.js"></script>
+    <!-- Services Section -->
+    <div id="team"></div>
+    <div class="services" id="services">
+      <h1>Our Team</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+            <div class="service-description">
+              
+                <p class="description-text">Jordan  <br>Website Creator</p>
+              </div>
+        </div>
+        <div class="services__card">
+            <div class="service-description">
+                <p class="description-text"> Ethan <br>Nft Artist</p>
+              </div>
+        </div>
+        <div class="services__card">
+            <div class="service-description">
+                <p class="description-text"> Carter <br>Gamedeveloper</p>
+              </div>
+        </div>
+        <div class="services__card">
+            
+            <div class="service-description">
+              <p class="description-text">Emily <br>Marketer</p>
+            </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+         
+          <p class="website__rights">© BusinessBulls 2023. All rights reserved</p>
+          <div class="social__icons">
+          
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-discord"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    </div>
+	
+	
+
+
+
+
+    
+	
+	
+
+
+	
+
+   
+	  
+   
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+    <script type="module" src="index.js"></script>
+
+	 
+	
+	
+	
+	
+	
+	
+	
+  </body>
+</html>

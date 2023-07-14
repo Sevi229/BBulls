@@ -1,0 +1,32 @@
+function handleFormSubmission(event) {
+    event.preventDefault();
+    const formData = new FormData(newEntryForm);
+    const points = gscore;
+    const wallet = accountE;
+  
+    const leaderboardData = await fetchLeaderboardData();
+  
+    const duplicateEntry = leaderboardData.find(data => data.wallet === wallet);
+    if (duplicateEntry) {
+      if (points > duplicateEntry.points) {
+        const deletedEntries = leaderboardData
+          .filter(data => data.wallet === wallet && data.points < points)
+          .map(data => data._id);
+        await Promise.all(deletedEntries.map(deleteLeaderboardEntry));
+      } else {
+        console.log('Points are lower than the existing entry.');
+        return;
+      }
+    }
+}
+// Function to initialize leaderboard
+async function initLeaderboard() {
+  const leaderboardData = await fetchLeaderboardData();
+  populateLeaderboardTable(leaderboardData);
+}
+
+// Add event listener to form submission
+newEntryForm.addEventListener('submit', handleFormSubmission);
+
+// Fetch leaderboard data and populate table when page loads
+initLeaderboard()

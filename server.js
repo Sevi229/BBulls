@@ -9,11 +9,12 @@ const app = express();
 app.use(bodyParser.json());
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(express.static(__dirname ));
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
-});
+})
+
+
 
 
 

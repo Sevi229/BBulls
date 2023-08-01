@@ -44,6 +44,12 @@ divmain.appendChild(img);
 divmain.appendChild(divo);
 add1.appendChild(divmain);
 
+
+function preloadImage(url) {
+      const img = new Image();
+      img.src = url;
+    }
+
     // Append the img element to the body element
   
  
@@ -902,23 +908,7 @@ add1.appendChild(divmain);
 				
 				if(go == 1){ 
 				bloodSpot.style.display = 'none';
-				
-				
-				//let myDiv = document.querySelector('div');
-				//myDiv.style.backgroundImage = "url('better.png')";
-				document.getElementById('a').style.backgroundImage="url('images/better.png')";
-				if (!(window.matchMedia("(max-width: 768px)").matches)) {
-                    const imgContainer2 = document.getElementById("start0");
-				imgContainer2.style.visibility = 'visible';
-                 }
-                 else{
-                    const imgContainer2 = document.getElementById("start0");
-				imgContainer2.style.visibility = 'hidden';
-                 }
-                
-				
-				
-				terrorist.setAttribute("src", "./m/0-.png");
+                terrorist.setAttribute("src", "./m/0-.png");
                 bull2.setAttribute("src", "./m/0-.png");
 				aim.setAttribute("src", "./m/0-.png");
 				bull3.setAttribute("src", "./m/0-.png");
@@ -930,6 +920,24 @@ add1.appendChild(divmain);
 				bull9.setAttribute("src", "./m/0-.png");
 				newlabel.innerHTML = "";
 				Kill.innerHTML = "";
+				
+				
+				//let myDiv = document.querySelector('div');
+				//myDiv.style.backgroundImage = "url('better.png')";
+				document.getElementById('a').style.backgroundImage="url('images/better.png')";
+                
+				if (!(window.matchMedia("(max-width: 768px)").matches)) {
+                    const imgContainer2 = document.getElementById("start0");
+				imgContainer2.style.visibility = 'visible';
+                 }
+                 else{
+                    const imgContainer2 = document.getElementById("start0");
+				imgContainer2.style.visibility = 'hidden';
+                 }
+                
+				
+				
+				
                 if(score > gscore){gscore = score;  
                    
                     // Check condition and call handleFormSubmission
@@ -966,7 +974,19 @@ add1.appendChild(divmain);
                 containerB.appendChild(bull8);
                 containerC.appendChild(bull9);
 				if(x != 1){x = 1;}
-				if(go == 1){t = 150; score = 0; speed = 1; End.innerHTML = ""; document.getElementById('a').style.backgroundImage="url('images/House_PS9.png')"; go = 0; Kill.innerHTML = "Target: ";  }
+				if(go == 1){	bloodSpot.style.display = 'none';
+                terrorist.setAttribute("src", "./m/0-.png");
+                bull2.setAttribute("src", "./m/0-.png");
+				aim.setAttribute("src", "./m/0-.png");
+				bull3.setAttribute("src", "./m/0-.png");
+				bull4.setAttribute("src", "./m/0-.png");
+				bull5.setAttribute("src", "./m/0-.png");
+				bull6.setAttribute("src", "./m/0-.png");
+				bull7.setAttribute("src", "./m/0-.png");
+				bull8.setAttribute("src", "./m/0-.png");
+				bull9.setAttribute("src", "./m/0-.png");
+				newlabel.innerHTML = "";
+				Kill.innerHTML = "";t = 150; score = 0; speed = 1; End.innerHTML = ""; document.getElementById('a').style.backgroundImage="url('images/House_PS9.png')"; go = 0; Kill.innerHTML = "Target: ";  }
 				else{document.getElementById('a').style.backgroundImage="url('images/House_PS9.png')";}
 				
 				//let myDivs = document.querySelector('div');
@@ -1300,7 +1320,7 @@ add1.appendChild(divmain);
 					if(pos[8] == 8 && to[8] == 99)bloodSpot.style.display = 'none';
 					
                     
-                    }
+                 }
 
             
                     
